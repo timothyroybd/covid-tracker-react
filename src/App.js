@@ -9,16 +9,20 @@ import Update from "./components/update";
 const url = "https://covid-193.p.rapidapi.com/statistics";
 export const DataContext = React.createContext();
 function App() {
+  const [countryName, setCountryName] = useState("");
+  const settingCountryName = (countryName) => {
+    setCountryName(countryName);
+  };
   const { loading, covidData } = useFetch(url);
   useEffect(() => {
     console.log(covidData);
   }, []);
 
   return (
-    <DataContext.Provider value={covidData}>
+    <DataContext.Provider value={{ loading, covidData, countryName }}>
       <div className="App"></div>
-      <Form />
-      {/* <Update /> */}
+      <Form grabCountryName={settingCountryName} />
+      <Update />
     </DataContext.Provider>
   );
 }

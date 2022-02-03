@@ -1,16 +1,28 @@
-import React, { useContext } from "react";
+import React, { useContext, useState, useRef } from "react";
 import { DataContext } from "../App";
+import { countryList } from "../data/countryList";
 
-const Dropdown = () => {
-  const covidData = useContext(DataContext);
+const Dropdown = (props) => {
+  const selectedCountry = useRef(null);
+  const { covidData } = useContext(DataContext);
+  const [countryName, setCountryName] = useState("");
+
   console.log(covidData);
   return (
     <article>
-      <select name="countries" id="countries">
-        {covidData.map((data) => {
+      <select
+        name="countries"
+        id="countries"
+        ref={selectedCountry}
+        onChange={(e) => {
+          setCountryName(e.target.value);
+          console.log(countryName);
+        }}
+      >
+        {countryList.map((country) => {
           return (
-            <option value={data.country} key={data.country}>
-              {data.country}
+            <option value={country} key={country}>
+              {country}
             </option>
           );
         })}
