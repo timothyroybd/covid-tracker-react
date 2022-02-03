@@ -19,6 +19,9 @@ export const useFetch = (url) => {
 
         if (response.status === 200) {
           setCovidData(responseData);
+          setLoading(false);
+        } else {
+          console.log("we got a probl");
         }
       })
       .catch(function (error) {
