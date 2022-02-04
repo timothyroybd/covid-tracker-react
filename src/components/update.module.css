@@ -1,0 +1,28 @@
+.article {
+  display: grid;
+  grid-template-columns: repeat(3, 250px);
+  justify-content: center;
+}
+.card {
+  height: 150px;
+  border: 2px solid white;
+  background-repeat: no-repeat;
+  background-size: 45px;
+
+  color: white;
+}
+.card h2 {
+  font-size: 1.2rem;
+}
+#card1 {
+  background-image: url("../asset//country.svg");
+  background-position: 95% 10px;
+
+  background-color: rgb(109, 179, 109);
+}
+#card2 {
+  background-image: url("../asset//country.svg");
+  background-position: 95% 10px;
+
+  background-color: rgb(109, 179, 109);
+}
