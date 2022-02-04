@@ -1,7 +1,7 @@
 export const countryList = [
   " ",
   "Afghanistan",
-  "Africa",
+
   "Albania",
   "Algeria",
   "Andorra",
@@ -11,7 +11,7 @@ export const countryList = [
   "Argentina",
   "Armenia",
   "Aruba",
-  "Asia",
+
   "Australia",
   "Austria",
   "Azerbaijan",
@@ -69,7 +69,7 @@ export const countryList = [
   "Estonia",
   "Eswatini",
   "Ethiopia",
-  "Europe",
+
   "Faeroe-Islands",
   "Falkland-Islands",
   "Fiji",
@@ -155,10 +155,10 @@ export const countryList = [
   "Nicaragua",
   "Niger",
   "Nigeria",
-  "North-America",
+
   "North-Macedonia",
   "Norway",
-  "Oceania",
+
   "Oman",
   "Pakistan",
   "Palau",
@@ -197,7 +197,7 @@ export const countryList = [
   "Solomon-Islands",
   "Somalia",
   "South-Africa",
-  "South-America",
+
   "South-Sudan",
   "Spain",
   "Sri-Lanka",

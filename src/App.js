@@ -16,7 +16,10 @@ function App() {
   const { loading, covidData } = useFetch(url);
   useEffect(() => {
     console.log(covidData);
-  }, []);
+  }, [covidData]);
+  useEffect(() => {
+    console.log(countryName);
+  }, [countryName]);
 
   return (
     <DataContext.Provider value={{ loading, covidData, countryName }}>

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Dropdown from "./dropdown";
 
-const Form = (props) => {
+const Form = ({ grabCountryName }) => {
   const [countryName, setCountryName] = useState("");
   const updateCountryValue = (country) => {
     setCountryName(country);
@@ -11,7 +11,7 @@ const Form = (props) => {
     e.preventDefault();
 
     console.log(`this is name from form ${countryName}`);
-    props.grabCountryName(countryName);
+    grabCountryName(countryName);
   };
 
   return (
