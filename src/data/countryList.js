@@ -1,5 +1,4 @@
 export const countryList = [
-  " ",
   "Afghanistan",
 
   "Albania",

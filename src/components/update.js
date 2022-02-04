@@ -40,7 +40,6 @@ const Update = () => {
         {updatedData ? (
           <div>
             {" "}
-            <h1>Hey I am available</h1>
             <h2>Country:{updatedData.country} </h2>
             <h2>Total Tests:{updatedData.testsTotal} </h2>
             <h2>New Cases:{updatedData.newCases} </h2>

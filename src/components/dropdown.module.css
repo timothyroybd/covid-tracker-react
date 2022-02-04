@@ -1,0 +1,82 @@
+:root {
+  --select-border: #777;
+  --select-focus: blue;
+  --select-arrow: var(--select-border);
+  --search-background: #1e1c22;
+}
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  width: 100%;
+  background-image: url("data:image/svg+xml;utf8,<svg fill='black' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
+  background-repeat: no-repeat;
+  background-position-x: 90%;
+  background-position-y: 18px;
+  outline: 1.5px rgb(142, 142, 247) solid;
+  border-radius: 2px;
+  margin-right: 2rem;
+  padding: 1rem 2.5rem;
+  padding-right: 2rem;
+  font-size: 1.5rem;
+  line-height: 1.5;
+  cursor: pointer;
+  color: #783cab;
+}
+select:focus {
+  outline: 2px rgb(100, 100, 223) solid;
+  box-shadow: 2px 2px 10px rgb(100, 100, 223);
+}
+
+.select {
+  width: 45%;
+  margin: 0 auto;
+
+  /*
+  margin: 20px auto;
+  border: 1px solid var(--select-border);
+  border-radius: 0.25em; */
+  /* padding: 0.25em 0.5em; */
+  /* font-size: 2rem;
+  cursor: pointer;
+
+  background-color: #fff; */
+  /* background-image: linear-gradient(to top, #f9f9f9, #fff 33%); */
+}
+/* .select::after {
+  content: "";
+  width: 0.8em;
+  height: 0.5em;
+  background-color: var(--select-arrow);
+  clip-path: polygon(100% 0%, 0 0%, 50% 100%);
+} */
+/* .select {
+  align-items: center;
+} */
+/* .select {
+  display: grid;
+} */
+/* width */
+::-webkit-scrollbar {
+  width: 13px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888888;
+
+  border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* .select:after {
+  justify-self: end;
+} */

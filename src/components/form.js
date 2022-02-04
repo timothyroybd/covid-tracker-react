@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-import Dropdown from "./dropdown";
+import DropdownForm from "./dropdown";
+import styles from "./form.module.css";
 
 const Form = ({ grabCountryName }) => {
   const [countryName, setCountryName] = useState("");
@@ -16,8 +17,10 @@ const Form = ({ grabCountryName }) => {
 
   return (
     <form onSubmit={(e) => submitHandler(e)}>
-      <Dropdown formhandler={updateCountryValue} />
-      <button type="submit">Get Update</button>
+      <DropdownForm formhandler={updateCountryValue} />
+      <button className={styles.btn} type="submit">
+        Get Update
+      </button>
     </form>
   );
 };

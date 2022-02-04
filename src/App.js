@@ -23,7 +23,7 @@ function App() {
 
   return (
     <DataContext.Provider value={{ loading, covidData, countryName }}>
-      <div className="App"></div>
+      <h1>COVID-19 Worldwide Update</h1>
       <Form grabCountryName={settingCountryName} />
       <Update />
     </DataContext.Provider>
