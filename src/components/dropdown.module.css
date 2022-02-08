@@ -1,30 +1,33 @@
 :root {
-  --select-border: #777;
-  --select-focus: blue;
+  --select-border: #54bab9;
+  --select-text: #323232;
+  --select-focus: #54bab9;
   --select-arrow: var(--select-border);
   --search-background: #1e1c22;
 }
 select {
+  margin-top: 20px;
   -webkit-appearance: none;
   -moz-appearance: none;
   width: 100%;
-  background-image: url("data:image/svg+xml;utf8,<svg fill='black' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
+  background-image: url("data:image/svg+xml;utf8,<svg fill='var(--select-border)' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
   background-repeat: no-repeat;
   background-position-x: 90%;
-  background-position-y: 18px;
-  outline: 1.5px rgb(142, 142, 247) solid;
-  border-radius: 2px;
-  margin-right: 2rem;
+  background-position-y: 13px;
+  outline: 1.5px var(--select-border) solid;
+  border-radius: 100px;
+  /* margin-right: 1rem; */
   padding: 1rem 2.5rem;
-  padding-right: 2rem;
-  font-size: 1.5rem;
-  line-height: 1.5;
+
+  font-size: 1.35rem;
+  line-height: 1;
   cursor: pointer;
-  color: #783cab;
+  color: var(--select-text);
+  transition: select 2s;
 }
 select:focus {
-  outline: 2px rgb(100, 100, 223) solid;
-  box-shadow: 2px 2px 10px rgb(100, 100, 223);
+  outline: 2px var(--select-focus) solid;
+  box-shadow: 2px 2px 30px var(--select-focus);
 }
 
 .select {

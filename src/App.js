@@ -1,4 +1,4 @@
-import "./App.css";
+import styles from "./app.module.css";
 import React from "react";
 import { useEffect, useState } from "react";
 import useFetch from "./hooks/useFetch";
@@ -23,7 +23,7 @@ function App() {
 
   return (
     <DataContext.Provider value={{ loading, covidData, countryName }}>
-      <h1>COVID-19 Worldwide Update</h1>
+      <h1 className={styles.heading}>COVID-19 Worldwide Update</h1>
       <Form grabCountryName={settingCountryName} />
       <Update />
     </DataContext.Provider>

@@ -1,6 +1,12 @@
 import React, { useContext, useEffect, useState } from "react";
 import { DataContext } from "../App";
 import styles from "./update.module.css";
+import world from "../asset/country.svg";
+import test from "../asset/test.png";
+import cases from "../asset/cases.png";
+import newCases from "../asset/newcase.png";
+import death from "../asset/death.png";
+import date from "../asset/date.png";
 
 const Update = () => {
   const { loading, covidData, countryName } = useContext(DataContext);
@@ -41,23 +47,52 @@ const Update = () => {
         {updatedData ? (
           <article className={styles.article}>
             <div className={styles.card} id={styles.card1}>
-              <h2>Country:{updatedData.country}</h2>
+              <div className="card-img">
+                <img src={world} alt="" />
+              </div>
+              <h2>{updatedData.country}</h2>
             </div>
             <div className={styles.card} id={styles.card2}>
-              <h2>Total Tests:{updatedData.testsTotal}</h2>
+              <div className="card-img">
+                <img src={test} alt="" />
+              </div>
+              <h2>
+                <div>Total Tests</div>
+                <div>{updatedData.testsTotal.toLocaleString()}</div>
+              </h2>
             </div>
             <div className={styles.card} id={styles.card3}>
-              <h2>Total Cases:{updatedData.totalCases}</h2>
+              <div className="card-img">
+                <img src={cases} alt="" />
+              </div>
+              <h2>
+                <div>Total Cases</div>
+                <div>{updatedData.totalCases.toLocaleString()}</div>
+              </h2>
             </div>
             <div className={styles.card} id={styles.card4}>
-              <h2>New Cases:{updatedData.newCases}</h2>
+              {" "}
+              <img src={newCases} alt="" />
+              <h2>
+                <div>New Cases</div>
+                <div>{updatedData.newCases.toLocaleString()}</div>
+              </h2>
             </div>
 
             <div className={styles.card} id={styles.card5}>
-              <h2>Total Death:{updatedData.deathTotal}</h2>
+              {" "}
+              <img src={death} alt="" />
+              <h2>
+                <div>Total Death</div>
+                <div>{updatedData.deathTotal.toLocaleString()}</div>
+              </h2>
             </div>
             <div className={styles.card} id={styles.card6}>
-              <h2>Date:{updatedData.date}</h2>
+              {" "}
+              <img src={date} alt="" />
+              <h2>
+                <div>{updatedData.date}</div>
+              </h2>
             </div>
             {/* {" "}
             <h2>Country:{updatedData.country} </h2>

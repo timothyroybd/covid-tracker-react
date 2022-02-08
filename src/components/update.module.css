@@ -3,26 +3,48 @@
   grid-template-columns: repeat(3, 250px);
   justify-content: center;
 }
+
 .card {
+  position: relative;
+  display: flex;
   height: 150px;
   border: 2px solid white;
   background-repeat: no-repeat;
   background-size: 45px;
-
+  justify-content: center;
+  align-items: center;
   color: white;
 }
 .card h2 {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+}
+.card img {
+  width: 35px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+#card2 img {
+  width: 50px;
+  top: 6px;
+  right: 6px;
 }
 #card1 {
-  background-image: url("../asset//country.svg");
-  background-position: 95% 10px;
-
   background-color: rgb(109, 179, 109);
 }
 #card2 {
-  background-image: url("../asset//country.svg");
-  background-position: 95% 10px;
-
+  background-color: rgb(109, 179, 109);
+}
+#card3 {
+  background-color: rgb(109, 179, 109);
+}
+#card4 {
+  background-color: rgb(109, 179, 109);
+}
+#card5 {
+  background-color: rgb(109, 179, 109);
+}
+#card6 {
   background-color: rgb(109, 179, 109);
 }
