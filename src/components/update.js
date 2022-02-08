@@ -7,6 +7,7 @@ import cases from "../asset/cases.png";
 import newCases from "../asset/newcase.png";
 import death from "../asset/death.png";
 import date from "../asset/date.png";
+import covid from "../asset/covid.png";
 
 const Update = () => {
   const { loading, covidData, countryName } = useContext(DataContext);
@@ -95,16 +96,11 @@ const Update = () => {
                 <div>{updatedData.date}</div>
               </h2>
             </div>
-            {/* {" "}
-            <h2>Country:{updatedData.country} </h2>
-            <h2>Total Tests:{updatedData.testsTotal} </h2>
-            <h2>New Cases:{updatedData.newCases} </h2>
-            <h2>Total Cases:{updatedData.totalCases} </h2>
-            <h2>Total Death:{updatedData.deathTotal} </h2>
-            <h2>Date:{updatedData.date} </h2>{" "} */}
           </article>
         ) : (
-          ""
+          <div className={styles.covid}>
+            <img src={covid} alt="" />
+          </div>
         )}
       </React.Fragment>
     );

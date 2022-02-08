@@ -21,7 +21,7 @@
   border-radius: 20px;
 }
 .card h2 {
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   letter-spacing: 1px;
 }
 .card img {
@@ -52,6 +52,22 @@
 }
 #card6 {
   background-color: #19282f;
+}
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+.covid {
+  text-align: center;
+}
+.covid img {
+  animation: rotation 6.2s infinite linear;
+  width: 300px;
+  margin-top: 50px;
 }
 @media only screen and (max-width: 990px) {
   .article {

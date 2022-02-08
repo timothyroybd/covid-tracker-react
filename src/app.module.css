@@ -1,6 +1,9 @@
 body {
   background-color: #fbf8f1;
 }
+.container {
+  min-height: calc(100vh - 157px);
+}
 .heading {
   text-align: center;
   margin: 50px 0 30px 0;
@@ -10,5 +13,15 @@ body {
 @media only screen and (max-width: 990px) {
   .heading {
     font-size: 3rem;
+  }
+}
+@media only screen and (max-width: 765px) {
+  .heading {
+    font-size: 2.5rem;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .heading {
+    font-size: 2rem;
   }
 }

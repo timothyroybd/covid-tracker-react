@@ -1,7 +1,7 @@
 :root {
-  --select-border: #54bab9;
+  --select-border: #19282f;
   --select-text: #323232;
-  --select-focus: #54bab9;
+  --select-focus: #19282f;
   --select-arrow: var(--select-border);
   --search-background: #1e1c22;
 }
