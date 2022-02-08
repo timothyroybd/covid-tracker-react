@@ -8,6 +8,7 @@ import newCases from "../asset/newcase.png";
 import death from "../asset/death.png";
 import date from "../asset/date.png";
 import covid from "../asset/covid.png";
+import spinner from "../asset/spinner.gif";
 
 const Update = () => {
   const { loading, covidData, countryName } = useContext(DataContext);
@@ -54,7 +55,7 @@ const Update = () => {
               <h2>{updatedData.country}</h2>
             </div>
             <div className={styles.card} id={styles.card3}>
-              <div className="card-img">
+              <div>
                 <img src={cases} alt="" />
               </div>
               <h2>
@@ -106,8 +107,13 @@ const Update = () => {
     );
   } else if (loading === true) {
     return (
-      <div>
-        <h1>Loading ...</h1>
+      <div className={styles.spinners}>
+        <div className={styles.lds_ring}>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
       </div>
     );
   }
