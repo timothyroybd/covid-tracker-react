@@ -52,15 +52,6 @@ const Update = () => {
               </div>
               <h2>{updatedData.country}</h2>
             </div>
-            <div className={styles.card} id={styles.card2}>
-              <div className="card-img">
-                <img src={test} alt="" />
-              </div>
-              <h2>
-                <div>Total Tests</div>
-                <div>{updatedData.testsTotal.toLocaleString()}</div>
-              </h2>
-            </div>
             <div className={styles.card} id={styles.card3}>
               <div className="card-img">
                 <img src={cases} alt="" />
@@ -70,6 +61,16 @@ const Update = () => {
                 <div>{updatedData.totalCases.toLocaleString()}</div>
               </h2>
             </div>
+            <div className={styles.card} id={styles.card2}>
+              <div className="card-img">
+                <img src={test} alt="" />
+              </div>
+              <h2>
+                <div>Total Tests</div>
+                <div>{updatedData.testsTotal.toLocaleString()}</div>
+              </h2>
+            </div>
+
             <div className={styles.card} id={styles.card4}>
               {" "}
               <img src={newCases} alt="" />

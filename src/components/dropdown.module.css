@@ -12,8 +12,9 @@ select {
   width: 100%;
   background-image: url("data:image/svg+xml;utf8,<svg fill='var(--select-border)' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
   background-repeat: no-repeat;
-  background-position-x: 90%;
-  background-position-y: 13px;
+  background-position-x: 95%;
+  background-position-y: 16px;
+
   outline: 1.5px var(--select-border) solid;
   border-radius: 100px;
   /* margin-right: 1rem; */
@@ -24,6 +25,7 @@ select {
   cursor: pointer;
   color: var(--select-text);
   transition: select 2s;
+  line-height: 1.2;
 }
 select:focus {
   outline: 2px var(--select-focus) solid;
@@ -31,7 +33,7 @@ select:focus {
 }
 
 .select {
-  width: 45%;
+  width: 500px;
   margin: 0 auto;
 
   /*
@@ -83,3 +85,13 @@ select:focus {
 /* .select:after {
   justify-self: end;
 } */
+@media only screen and (max-width: 990px) {
+  .select {
+    width: 350px;
+  }
+  select {
+    font-size: 1.2rem;
+    line-height: 1;
+    background-position-y: 14px;
+  }
+}

@@ -1,19 +1,24 @@
 .article {
+  margin-top: 50px;
   display: grid;
-  grid-template-columns: repeat(3, 250px);
+  grid-gap: 20px;
+  grid-template-columns: repeat(3, 300px);
+
   justify-content: center;
 }
 
 .card {
   position: relative;
+
   display: flex;
-  height: 150px;
+  height: 170px;
   border: 2px solid white;
   background-repeat: no-repeat;
   background-size: 45px;
   justify-content: center;
   align-items: center;
   color: white;
+  border-radius: 20px;
 }
 .card h2 {
   font-size: 1.5rem;
@@ -31,20 +36,50 @@
   right: 6px;
 }
 #card1 {
-  background-color: rgb(109, 179, 109);
+  background-color: #19282f;
 }
 #card2 {
-  background-color: rgb(109, 179, 109);
+  background-color: #19282f;
 }
 #card3 {
-  background-color: rgb(109, 179, 109);
+  background-color: #b33030;
 }
 #card4 {
-  background-color: rgb(109, 179, 109);
+  background-color: #19282f;
 }
 #card5 {
-  background-color: rgb(109, 179, 109);
+  background-color: #b33030;
 }
 #card6 {
-  background-color: rgb(109, 179, 109);
+  background-color: #19282f;
+}
+@media only screen and (max-width: 990px) {
+  .article {
+    grid-template-columns: repeat(2, 350px);
+  }
+  .card {
+    height: 200px;
+  }
+}
+@media only screen and (max-width: 765px) {
+  .article {
+    grid-template-columns: repeat(1, 380px);
+  }
+  .card {
+    height: 230px;
+  }
+  .card h2 {
+    font-size: 2rem;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .article {
+    grid-template-columns: repeat(1, 300px);
+  }
+  .card {
+    height: 190px;
+  }
+  .card h2 {
+    font-size: 1.5rem;
+  }
 }
